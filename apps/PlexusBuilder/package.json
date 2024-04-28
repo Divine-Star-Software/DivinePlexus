@@ -1,0 +1,24 @@
+{
+  "name": "plexus-builder",
+  "version": "0.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd build ; npm run start",
+    "start-webpack": "npx webpack  serve --mode development --env development --https  --config webpack.config.dev.cjs  ",
+    "build": "npx webpack --config webpack.config.dev.cjs  "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.11.28",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2",
+    "zustand": "^4.4.3"
+  },
+  "devDependencies": {
+
+  },
+  "keywords": [],
+  "description": ""
+}

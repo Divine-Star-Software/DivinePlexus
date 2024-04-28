@@ -1,0 +1,145 @@
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  --top-bar-height: 32px;
+  --top-bar-border-height: 1px;
+
+  --primary: #1e2225;
+  --primary-dark: #141818;
+  --primary-bright: #0481a0;
+  --primary-highlight: #41a6e0;
+  --label-background: var(--primary-dark);
+  --input-background: #0a272e;
+
+  --font-color: #fff;
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+  --font-size-large: 20px;
+  --font-size-xlarge: 30px;
+
+  --font-size-screen-title: 3vw;
+  --font-size-game-title: 5vw;
+
+  --font-size-form-label: 20px;
+  --font-size-form-input: 20px;
+
+  background-color: var(--primary);
+
+  /*color: var(--font-color);*/
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --glass-highlight: #009ffd;
+  --main-dark: #1a1a2e;
+  --main: #16222a;
+  --text-light: #ffffff;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --scrollbar-thumb: #4c4c4c; /* Adjusted for dark glass theme */
+  --scrollbar-track: #2a2a2a; /* Adjusted for dark glass theme */
+}
+.render-canvas-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#main {
+  touch-action: none;
+  outline: none;
+  display: inline;
+  border: none;
+  /*  // width: 100%;
+   / height: 100%; */
+  user-select: none;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.default-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+
+  .default-icon {
+    width: 25px;
+    display: block;
+    margin: auto;
+    stroke: white;
+    fill: white;
+  }
+}
+
+.default-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 5px 20px rgba(0, 159, 253, 0.4);
+  border-color: #009ffd;
+}
+
+.default-button:active {
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border: 3px solid var(--scrollbar-track);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--glass-highlight);
+}
+
+
+@keyframes spin {
+  0% {
+    transform: rotate3d(0, -1, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, -1, 0, 360deg);
+  }
+}

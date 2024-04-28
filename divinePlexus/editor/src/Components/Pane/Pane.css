@@ -1,0 +1,61 @@
+.pane-container {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  .pane-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .pane-side-bar {
+    background: rgba(49, 44, 68, 0.5);
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+    &.left {
+      min-width: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &.right {
+      min-width: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &.bottom {
+      width: 100%;
+      min-height: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .pane-component {
+    width: 100%;
+
+    border-radius: 6px;
+    border: 1px solid rgba(128, 128, 128, 0.15);
+
+    display: flex;
+    flex-direction: column;
+    .pane-component-title {
+      color: #fff;
+    }
+
+    .pane-component-content {
+      background: rgba(255, 255, 255, 0.05);
+      display: flex;
+      flex-direction: column;
+      color: #fff;
+    }
+  }
+}

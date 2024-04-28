@@ -1,0 +1,12 @@
+.node-canvas {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  z-index: 10000;
+}
+.edge-canvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 10000;
+}

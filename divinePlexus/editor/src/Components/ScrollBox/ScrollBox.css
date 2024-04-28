@@ -1,0 +1,6 @@
+.scroll-box {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  border: 1px solid var(--primary-bright);
+}

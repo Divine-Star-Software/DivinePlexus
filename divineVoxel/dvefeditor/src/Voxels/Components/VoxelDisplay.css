@@ -1,0 +1,18 @@
+.voxel-display {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  .voxel-image-container {
+    height: 50px;
+    width: 50px;
+  }
+  .voxel-display-data {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}

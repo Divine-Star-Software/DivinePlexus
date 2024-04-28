@@ -1,0 +1,46 @@
+.switch-bar {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+  .default-button {
+    height: 100%;
+    padding: 0;
+    width: 100%;
+    outline: none;
+    border: 1px solid var(--primary-dark);
+    background: var(--primary);
+
+    &.switch-item-active {
+      color: var(--primary-bright);
+      border: 1px solid var(--primary-bright);
+      background: var(--primary-dark);
+      .default-icon {
+
+        stroke: var(--primary-bright);
+        fill: var(--primary-bright);
+        transition: 0.25s;
+      }
+    }
+    &:hover {
+      color: var(--primary-bright);
+      cursor: pointer;
+      .default-icon {
+
+        stroke: var(--primary-bright);
+        fill: var(--primary-bright);
+        transition: 0.25s;
+      }
+    }
+    .default-icon {
+     
+      display: block;
+      stroke: rgb(255, 255, 255);
+      fill: rgb(255, 255, 255);
+      transition: 0.25s;
+      > svg {
+        width: 25px;
+        height: auto;
+      }
+    }
+  }
+}

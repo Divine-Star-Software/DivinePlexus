@@ -1,0 +1,12 @@
+{
+  "extends": "../../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "../dist",
+    "baseUrl": "./",
+    "types": ["node"],
+    "allowJs": true,
+    "checkJs": false,
+    "declaration": true,
+    "jsx": "react-jsx"
+  }
+}

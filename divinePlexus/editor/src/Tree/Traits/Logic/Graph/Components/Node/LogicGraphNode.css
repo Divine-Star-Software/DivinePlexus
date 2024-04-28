@@ -1,0 +1,63 @@
+.logic-graph-node {
+  position: absolute;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.6); /* Added a subtle glow effect */
+
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+
+  > .pane-top {
+    > .pane-component {
+      > .pane-component-title {
+        min-height: 50px;
+        position: relative;
+        z-index: 10000;
+      }
+      > .pane-component-content {
+        min-width: 250px;
+        min-height: 150px;
+
+        position: relative;
+        z-index: 10000;
+      }
+    }
+  }
+  .io-left,
+  .io-right,
+  .io-top,
+  .io-bottom {
+    position: absolute; /* This is crucial for aligning them properly within .logic-graph-io */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+
+  .io-left {
+    left: -30px;
+    height: 100%;
+    flex-direction: column;
+    width: 30px;
+  }
+
+  .io-right {
+    right: -30px;
+    height: 100%;
+    flex-direction: column;
+    width: 30px;
+  }
+
+  .io-top {
+    top: -30px;
+    width: 100%;
+    flex-direction: row;
+    height: 30px;
+  }
+
+  .io-bottom {
+    bottom: -20px;
+    width: 100%;
+    flex-direction: row; /* Adjust if needed, assuming you want horizontal alignment like .io-top */
+    height: 30px;
+  }
+}

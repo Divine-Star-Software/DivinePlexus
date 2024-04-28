@@ -1,0 +1,111 @@
+.app-template {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  .app-top-bar {
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 0%,
+      rgba(0, 0, 0, 0.5) 50%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .app-title {
+      margin: auto;
+      display: block;
+    }
+  }
+  .app-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .app-left-content {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+
+      .app-left-content-main {
+        display: flex;
+        flex-direction: row;
+        height: 80%;
+      }
+      .app-left-side-bar {
+        width: 20%;
+        height: 100%;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(
+          to left,
+          rgba(0, 0, 0, 0.1) 0%,
+          rgba(0, 0, 0, 0.5) 50%,
+          rgba(0, 0, 0, 0.7) 100%
+        );
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+      }
+
+      .app-main-content {
+        padding: 0;
+        margin: 0;
+        width: 80%;
+        height: 100%;
+      }
+
+      .app-bottom-content {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 20%;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.1) 0%,
+          rgba(0, 0, 0, 0.5) 50%,
+          rgba(0, 0, 0, 0.7) 100%
+        );
+      }
+    }
+
+    .app-right-content {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+
+      .app-right-side-bar {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-left: 2px solid rgba(0, 0, 0, 0.1);
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.1) 0%,
+          rgba(0, 0, 0, 0.5) 50%,
+          rgba(0, 0, 0, 0.7) 100%
+        );
+      }
+    }
+  }
+}

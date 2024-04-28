@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "rootDir": "./",
+    "rootDirs": [],
+    "composite": true,
+    "types": ["react", "node"],
+    "outDir": "../dist/",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["./assets/*"],
+      "@classes/*": ["./Classes/*"],
+      "@databases/*": ["./databases/*"]
+    },
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "jsx": "react-jsx",
+    "declaration": true
+  }
+}

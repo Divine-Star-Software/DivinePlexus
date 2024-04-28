@@ -1,0 +1,13 @@
+{
+  "name": "@divineplexus/dvefcore",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist/* && cp package.json dist/package.json && npm run compile",
+    "compile": "cd ./src && npx tsc ; npx tsc-alias"
+  },
+  "author": "Divine Star Software"
+}

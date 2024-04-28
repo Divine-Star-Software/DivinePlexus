@@ -1,0 +1,50 @@
+.context-menu {
+  position: absolute;
+  z-index: 10000000000000000000;
+  width: 200px;
+  min-height: 100px;
+  background-color: rgb(44, 44, 44);
+  background: rgb(24, 23, 23);
+
+  z-index: 10000000000000;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-dark);
+  border: 1px solid var(--primary-bright);
+
+  .drop-down-menu-item {
+    width: 180px;
+
+    height: 25px;
+
+    text-align: left;
+    margin: 0;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    transition: 0.25s;
+    &:hover {
+      transition: 0.25s;
+      cursor: pointer;
+      color: var(--primary-dark);
+      background-color: var(--primary-bright);
+    }
+    .default-icon {
+      display: inline;
+      stroke: rgb(255, 255, 255);
+      fill: rgb(255, 255, 255);
+      transition: 0.25s;
+      margin: auto;
+      > svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &:hover .drop-down-menu-iten-children {
+      color: var(--font-color);
+      background-color: var(--primary-dark);
+    }
+  }
+}

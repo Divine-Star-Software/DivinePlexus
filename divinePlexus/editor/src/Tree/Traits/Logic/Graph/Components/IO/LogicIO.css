@@ -1,0 +1,18 @@
+.logic-graph-socket {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #00D4FF; /* Vibrant blue to match the line's color */
+  border: 2px solid #007BFF; /* A slightly darker blue for the border */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.6); /* Added a subtle glow effect */
+
+  &:hover {
+    cursor: pointer;
+    background-color: #00BFFF; /* Lighter blue on hover for interactivity */
+    box-shadow: 0 0 12px rgba(0, 191, 255, 0.8); /* Enhanced glow effect on hover */
+  }
+}

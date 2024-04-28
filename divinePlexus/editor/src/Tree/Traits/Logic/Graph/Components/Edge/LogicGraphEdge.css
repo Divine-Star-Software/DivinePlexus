@@ -1,0 +1,30 @@
+@keyframes slide {
+  from {
+    stroke-dashoffset: 0;
+  }
+  to {
+    stroke-dashoffset: 200;
+  }
+}
+.energy-flow-line {
+  box-shadow: 0 0 8px rgba(0, 212, 255, 0.6);
+  stroke-dasharray: 20;
+  animation: slide 4s linear infinite;
+  stroke-linecap: round;
+
+  &:hover {
+    box-shadow: 0 0 8px rgb(0, 213, 255);
+    cursor: pointer;
+  }
+}
+
+.energy-flow-line-selected {
+  box-shadow: 0 0 8px rgba(250, 162, 0, 0.986);
+  stroke-dasharray: 20;
+  animation: slide 4s linear infinite;
+  stroke-linecap: round;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

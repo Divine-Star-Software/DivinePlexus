@@ -1,0 +1,61 @@
+.editor-main-content {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+  .render-canvas {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: calc(100% - 4px);
+    border: none;
+    outline: none;
+    overflow: hidden;
+  }
+}
+.editor-tool-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 30px;
+
+  display: flex;
+  flex-direction: column;
+  .default-button {
+    transition: 0.25s;
+    &.active {
+      background: var(--primary-bright);
+      color: rgba(0, 0, 0, 0.5);
+    }
+    &:hover {
+      transition: 0.25s;
+      cursor: pointer;
+      background: var(--primary-bright);
+      color: rgba(0, 0, 0, 0.5);
+    }
+  }
+}
+
+.debug-overlay {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  min-width: 200px;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  .debug-node {
+    display: flex;
+    flex-direction: row;
+    .debug-node-title {
+      font-weight: 900;
+    }
+    .debug-node-data {
+    }
+  }
+}

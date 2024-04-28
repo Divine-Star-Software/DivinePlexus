@@ -1,0 +1,12 @@
+.graph-left-sidebar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100000000000000000;
+  height: 100%;
+  width: 250px;
+  background: rgba(26, 26, 26, 0.5);
+  border-radius: 6px;
+  border: 1px solid rgba(128, 128, 128, 0.15);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,46 @@
+.json-tree {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+    max-height: 600px;
+  }
+  
+  .json-key {
+    color: #9dffb0; /* Light green for keys */
+    cursor: pointer;
+  }
+  
+  .json-object {
+    color: #00d8ff; /* Light blue for objects and arrays */
+    cursor: pointer;
+  }
+  
+  .json-value {
+    margin-left: 10px;
+  }
+  
+  .json-string {
+    color: #ffa07a; /* Light salmon for strings */
+  }
+  
+  .json-number {
+    color: #00ffff; /* Cyan for numbers */
+  }
+  
+  .json-boolean {
+    color: #7fffd4; /* Aquamarine for booleans */
+  }
+  
+  .json-children {
+    margin-left: 20px;
+    display: block;
+  }
+  
+  .clickable:hover {
+    text-decoration: underline;
+  }

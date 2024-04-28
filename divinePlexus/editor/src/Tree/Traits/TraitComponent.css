@@ -1,0 +1,57 @@
+.trait-component {
+  .node-component-trait-icon {
+    display: block;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(
+      18,
+      18,
+      18,
+      0.75
+    ); /* Dark, semi-transparent background */
+    backdrop-filter: blur(10px); /* Glass effect */
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    .default-icon {
+      width: 20px;
+      height: 20px;
+      > svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .node-component-trait-lock-icon {
+    display: block;
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(
+      18,
+      18,
+      18,
+      0.75
+    ); /* Dark, semi-transparent background */
+    backdrop-filter: blur(10px); /* Glass effect */
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    .default-icon {
+      width: 20px;
+      height: 20px;
+      > svg {
+        width: 20px;
+        height: 20px;
+        stroke: rgb(255, 255, 255);
+        fill: rgb(255, 255, 255);
+      }
+    }
+  }
+  .pane-component-title {
+    min-height: 25px;
+  }
+}

@@ -1,0 +1,119 @@
+.editor-node-tree {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .tool-bar {
+    .default-button {
+      width: 100%;
+    }
+  }
+
+  .node-tree-search {
+    display: flex;
+    flex-direction: row;
+    .default-icon {
+      width: 25px;
+      > svg {
+        width: 25px;
+        stroke: white;
+        fill: white;
+      }
+    }
+    .input {
+      width: 100%;
+    }
+  }
+  .editor-scene-group {
+    .default-collapse-panel-title {
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.1) 0%,
+        rgba(255, 255, 255, 0) 50%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+    }
+    .default-collapse-panel-content {
+      background: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.75) 100%
+      );
+    }
+    &.selected {
+      .default-collapse-panel-title {
+        color: var(--primary-dark);
+        background-color: var(--primary-bright);
+      }
+    }
+    .default-collapse-panel-title {
+      background-color: var(--primary-dark);
+      color: var(--font-color);
+    }
+  }
+  .editor-scene-node {
+    color: var(--font-color);
+
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.1) 0%,
+      rgba(255, 255, 255, 0) 50%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+
+    &.selected {
+      color: var(--primary-dark);
+      background-color: var(--primary-bright);
+    }
+  }
+  .node-add-container {
+    width: 100%;
+
+    .node-add-name {
+      width: 100%;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: left;
+    }
+    .node-add-description {
+      width: 100%;
+      text-align: left;
+    }
+    .default-button {
+      width: 100%;
+    }
+  }
+
+  .editor-scene-node-tree {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    &.dragged-over {
+      background-color: var(--primary-bright);
+    }
+  }
+  .editor-scene-node-screen {
+    &.dragged-over {
+      background-color: var(--primary-bright);
+    }
+  }
+  .data-node-tree-node-icon {
+    display: inline;
+    margin-right: 5px;
+    .default-icon {
+      width: 20px;
+      > svg {
+        width: 20px;
+      }
+    }
+  }
+}
+.node-add-icon {
+  width: 20px;
+  .default-icon {
+    width: 20px;
+    > svg {
+      width: 20px;
+      stroke: black;
+    }
+  }
+}
